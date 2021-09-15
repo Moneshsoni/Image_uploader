@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aadhar:</strong>
+  <img src="<%= @docfile.aadhar %>">
+ 
+</p>
+
+<p>
+  <strong>Pan:</strong>
+  <img src="<%= @docfile.pan %>">
+</p>
+
+<%= link_to 'Edit', edit_docfile_path(@docfile) %> |
+<%= link_to 'Back', docfiles_path %>

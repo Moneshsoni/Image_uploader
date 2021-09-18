@@ -14,8 +14,12 @@
   <tbody>
     <% @docfiles.each do |docfile| %>
       <tr>
+      
+
         <td><img src="<%= docfile.aadhar %>"></td>
         <td><img src="<%= docfile.pan %>"></td>
+        <hr/>
+        <h1> Hi I am monesh </h1> 
         <td><%= link_to 'Show', docfile %></td>
         <td><%= link_to 'Edit', edit_docfile_path(docfile) %></td>
         <td><%= link_to 'Destroy', docfile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
